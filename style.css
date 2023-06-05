@@ -1,0 +1,131 @@
+/* Basic Styles Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005f99;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .banner {
+    background-image: url('./banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-content {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .section-item {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-item img {
+    max-width: 250px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }
+  
+  .section-text {
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #005f99;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .section-item {
+      margin-bottom: 20px;
+    }
+  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container {
+  text-align: right;
+  margin-top: auto;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
